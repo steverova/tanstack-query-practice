@@ -17,16 +17,26 @@
       "coverage",
       "public"
     ],
-
     "rules": {
       "recommended": true,
       "a11y": {
         "useMediaCaption": {
           "level": "off"
-        }
+        },
+        "noAccessKey": "error",
+        "noAriaHiddenOnFocusable": "error",
+        "noAriaUnsupportedElements": "warn",
+        "noAutofocus": "error",
+        "noBlankTarget": "error"
       },
-
+      "suspicious": {
+        "useValidTypeof": {
+          "level": "error"
+        },
+        "noImplicitAnyLet": "error"
+      },
       "correctness": {
+        "noUndeclaredDependencies": "error",
         "noChildrenProp": "error",
         "noUnusedImports": "error",
         "useExhaustiveDependencies": "off",

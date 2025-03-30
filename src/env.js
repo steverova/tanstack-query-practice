@@ -1,1 +1,1 @@
-export const GITHUB_TOKEN = ''
+export const LIMITATION_SECRET = ''

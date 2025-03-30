@@ -1,5 +1,5 @@
 import axios from 'axios'
-import { GITHUB_TOKEN } from '../env'
+import { LIMITATION_SECRET } from '../env'
 
 const baseURL = 'https://api.github.com/repos/facebook/react/'
 
