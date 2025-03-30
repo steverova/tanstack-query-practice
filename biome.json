@@ -1,5 +1,10 @@
 {
   "$schema": "https://biomejs.dev/schemas/1.9.4/schema.json",
+  "vcs": {
+    "enabled": true,
+    "clientKind": "git",
+    "useIgnoreFile": true
+  },
   "organizeImports": {
     "enabled": true
   },
@@ -82,6 +87,7 @@
     "lineEnding": "lf"
   },
   "javascript": {
+    "jsxRuntime": "transparent",
     "formatter": {
       "arrowParentheses": "always",
       "bracketSameLine": true,
@@ -96,7 +102,12 @@
   },
   "json": {
     "formatter": {
+      "enabled": true,
       "trailingCommas": "none"
+    },
+    "linter": {
+      "enabled": true
     }
-  }
+  },
+  "overrides": []
 }
