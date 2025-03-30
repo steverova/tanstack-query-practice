@@ -6,6 +6,6 @@ const baseURL = 'https://api.github.com/repos/facebook/react/'
 export const githubApi = axios.create({
 	baseURL,
 	headers: {
-		Authorization: `Bearer ${GITHUB_TOKEN}`
+		Authorization: `Bearer ${process.env.LIMITATION_SECRET}`
 	}
 })
